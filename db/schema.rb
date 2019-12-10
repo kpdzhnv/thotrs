@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_10_054253) do
+ActiveRecord::Schema.define(version: 2019_12_10_131442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,25 +18,25 @@ ActiveRecord::Schema.define(version: 2019_12_10_054253) do
   create_table "facilities", force: :cascade do |t|
     t.text "description"
     t.string "name"
-    t.bigint "rooms_id"
-    t.index ["rooms_id"], name: "index_facilities_on_rooms_id"
+    t.bigint "room_id"
+    t.index ["room_id"], name: "index_facilities_on_room_id"
+  end
+
+  create_table "facilities_records", force: :cascade do |t|
+    t.bigint "record_id"
+    t.bigint "facility_id"
+    t.index ["facility_id"], name: "index_facilities_records_on_facility_id"
+    t.index ["record_id"], name: "index_facilities_records_on_record_id"
   end
 
   create_table "records", force: :cascade do |t|
     t.date "date"
     t.time "time"
-    t.bigint "users_id"
-    t.bigint "rooms_id"
+    t.bigint "user_id"
+    t.bigint "room_id"
     t.integer "duration"
-    t.index ["rooms_id"], name: "index_records_on_rooms_id"
-    t.index ["users_id"], name: "index_records_on_users_id"
-  end
-
-  create_table "records_facilities", force: :cascade do |t|
-    t.bigint "records_id"
-    t.bigint "facilities_id"
-    t.index ["facilities_id"], name: "index_records_facilities_on_facilities_id"
-    t.index ["records_id"], name: "index_records_facilities_on_records_id"
+    t.index ["room_id"], name: "index_records_on_room_id"
+    t.index ["user_id"], name: "index_records_on_user_id"
   end
 
   create_table "rooms", force: :cascade do |t|
@@ -56,8 +56,8 @@ ActiveRecord::Schema.define(version: 2019_12_10_054253) do
     t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "statuses_id"
-    t.index ["statuses_id"], name: "index_users_on_statuses_id"
+    t.bigint "status_id"
+    t.index ["status_id"], name: "index_users_on_status_id"
   end
 
 end
