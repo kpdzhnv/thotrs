@@ -1,3 +1,3 @@
 class Facility < ApplicationRecord
-    has_many :records, through: :records_facilities
+    has_and_belongs_to_many :records
 end

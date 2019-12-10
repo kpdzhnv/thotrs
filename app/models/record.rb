@@ -1,5 +1,5 @@
 class Record < ApplicationRecord
-  has_many :facilities, through: :records_facilities
+  has_and_belongs_to_many :facilities
   belongs_to :user
   belongs_to :room
 
