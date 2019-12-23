@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_131442) do
     t.text "description"
     t.string "name"
     t.bigint "room_id"
-    t.index ["room_id"], name: "index_facilities_on_room_id"
+    t.index ["room_id"], name: "index_facilities_on_rooms_id"
   end
 
   create_table "facilities_records", force: :cascade do |t|
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2019_12_10_131442) do
     t.bigint "user_id"
     t.bigint "room_id"
     t.integer "duration"
-    t.index ["room_id"], name: "index_records_on_room_id"
-    t.index ["user_id"], name: "index_records_on_user_id"
+    t.index ["room_id"], name: "index_records_on_rooms_id"
+    t.index ["user_id"], name: "index_records_on_users_id"
   end
 
   create_table "rooms", force: :cascade do |t|
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_131442) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "status_id"
-    t.index ["status_id"], name: "index_users_on_status_id"
+    t.index ["status_id"], name: "index_users_on_statuses_id"
   end
 
 end

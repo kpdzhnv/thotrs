@@ -1,10 +1,8 @@
-
 <html><head>
   <title>Thotrs</title>
 </head>
 
 <body>
-
 <nav>
 
   <div class="nav-content">
@@ -29,12 +27,16 @@
 
 </nav>
 
-<section class="records_create">
+<section class="users_create">
 
-  <div class="welcome">Welcome To Our Studio!</div>
-  <div class="nicetomeetyou">It's Nice To Meet You</div>
-  <div class="btn">
-    <%= link_to 'Зарегистрироваться', 'new'%>
+  <div class="div-form">
+    <%= form_with scope: :user, local: true, method: :post do |form| %>
+      <%= form.text_field :name, class: 'create-form', placeholder: 'ИМЯ'%>
+      <%= form.text_field :email, class: 'create-form', placeholder: 'E-MAIL' %>
+      <%= form.telephone_field :number, class: 'create-form', placeholder: 'TEL' %>
+      <%= form.password_field :password, class: 'create-form', placeholder: 'PASSWORD' %>
+      <%= form.submit :'СОЗДАТЬ', placeholder: 'СОЗДАТЬ', class: 'create-form submit-form' %>
+    <% end %>
   </div>
 
 </section>
@@ -48,26 +50,17 @@
       </div>
       <div class="footer-column">
         <ul class="social">
-          <li class="social-link"><a href="#">VK</a></li>
-          <li class="social-link"><a href="#">Instagram</a></li>
-          <li class="social-link"><a href="#">Twitter</a></li>
+          <li><a href="#">VK</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <ul class="footer-links">
-          <li class="footer-link">
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li class="footer-link">
-            <a href="#">Terms of Use</a>
-          </li>
-        </ul>
+        ты супер
       </div>
     </div>
   </div>
 
 </footer>
 
-</body>
-
-</html>
+</body></html>
