@@ -23,7 +23,7 @@ class InitialMigration < ActiveRecord::Migration[6.0]
     end
 
     create_table :facilities do |t|
-      t.string :room_name
+      t.string :room_nameв
       t.text :description
     end
 

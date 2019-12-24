@@ -1,66 +1,13 @@
-<html><head>
-  <title>Thotrs</title>
-</head>
-
-<body>
-<nav>
-
-  <div class="nav-content">
-    <a class="logo" href="#">Logo</a>
-    <div class="menu">
-      <ul class="nav-menu">
-        <li class="nav-elem">
-          <a href="#">О нас</a>
-        </li>
-        <li class="nav-elem">
-          <a href="#">Оборудование</a>
-        </li>
-        <li class="nav-elem">
-          <a href="#">Залы</a>
-        </li>
-        <li class="nav-elem">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-</nav>
-
 <section class="users_create">
 
   <div class="div-form">
-    <%= form_with scope: :user, local: true, method: :post do |form| %>
+    <%= form_for :user, url: 'users/create', method: :post do |form| %>
       <%= form.text_field :name, class: 'create-form', placeholder: 'ИМЯ'%>
       <%= form.text_field :email, class: 'create-form', placeholder: 'E-MAIL' %>
       <%= form.telephone_field :number, class: 'create-form', placeholder: 'TEL' %>
       <%= form.password_field :password, class: 'create-form', placeholder: 'PASSWORD' %>
-      <%= form.submit :'СОЗДАТЬ', placeholder: 'СОЗДАТЬ', class: 'create-form submit-form' %>
+      <%= form.submit :I18n.t :create, class: 'create-form submit-form' %>
     <% end %>
   </div>
 
 </section>
-
-<footer>
-
-  <div class="footer-content">
-    <div class="footer-columns">
-      <div class="footer-column">
-        <span class="copyright">Copyright © ъуъ 2019</span>
-      </div>
-      <div class="footer-column">
-        <ul class="social">
-          <li><a href="#">VK</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        ты супер
-      </div>
-    </div>
-  </div>
-
-</footer>
-
-</body></html>

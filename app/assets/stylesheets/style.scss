@@ -18,7 +18,7 @@ nav{
   left: 0;
   display: flex;
   align-items: center;
-  padding: .5rem 1rem;
+  padding: 0 1rem;
 }
 
 ul{
@@ -45,7 +45,9 @@ div{
   align-content: center;
 }
 
+
 .nav-content{
+  background-color: #212529;
   display: flex;
   align-items: center;
   justify-content: space-between;
