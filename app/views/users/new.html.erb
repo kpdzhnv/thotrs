@@ -1,12 +1,12 @@
 <section class="users_create">
 
   <div class="div-form">
-    <%= form_for :user, url: 'users/create', method: :post do |form| %>
+    <%= form_for :user, url: 'create', method: :post do |form| %>
       <%= form.text_field :name, class: 'create-form', placeholder: 'ИМЯ'%>
       <%= form.text_field :email, class: 'create-form', placeholder: 'E-MAIL' %>
       <%= form.telephone_field :number, class: 'create-form', placeholder: 'TEL' %>
       <%= form.password_field :password, class: 'create-form', placeholder: 'PASSWORD' %>
-      <%= form.submit :I18n.t :create, class: 'create-form submit-form' %>
+      <%= form.submit :ok, class: 'create-form submit-form' %>
     <% end %>
   </div>
 

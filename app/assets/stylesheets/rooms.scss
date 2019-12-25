@@ -1,3 +1,18 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.show_rooms{
+  padding: 100px;
+}
+
+.show_rooms td{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 50px;
+}
+
+.show_rooms tr:first-child{
+  background-color: rgba(254, 209, 54, 0.1);
+  text-transform: uppercase;
+}
+

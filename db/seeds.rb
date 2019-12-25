@@ -17,6 +17,8 @@ user3 = User.create(name: 'name3', email: 'email3@mail.ru',
 
 room1 = Room.create(room_name: 'room1', description: 'great room')
 room2 = Room.create(room_name: 'room2', description: 'awesome room')
+room3 = Room.create(room_name: 'room1', description: 'amazing room')
+room4 = Room.create(room_name: 'room2', description: 'the best room')
 
 facility1 = Facility.create(name: 'facility name 1',description: 'some facility')
 facility2 = Facility.create(name: 'facility name 2',description: 'another facility')

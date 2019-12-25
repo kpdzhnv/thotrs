@@ -1,17 +1,35 @@
 
 <section class="users_create">
 
-  <div class="welcome">Welcome To Our Studio!</div>
-  <div class="nicetomeetyou">It's Nice To Meet You</div>
+  <div class="welcome">Залы нашей студии:</div>
 
-  <div class="show_rooms">
-    <%=@rooms.each do |room| %>
-      <div class="room_name">
-        <%= room.room_name %>
-      </div>
+  <table class="show_rooms">
+    <tr>
+      <td>зал: </td>
+      <td>описание: </td>
+      <td>цена за час: </td>
+    </tr>
+    <% @rooms.each do |room| %>
+      <tr>
+        <td>
+          <div class="room_name">
+            <%= room.room_name %>
+          </div>
+        </td>
+        <td>
+          <div class="room_desc">
+            <%= room.description %>
+          </div>
+        </td>
+        <td>
+          <div class="room_desc">
+            <%= rand(100000..500000) %> деняк
+          </div>
+        </td>
+      </tr>
+
     <% end %>
-  </div>
-
+  </table>
 
 
 </section>

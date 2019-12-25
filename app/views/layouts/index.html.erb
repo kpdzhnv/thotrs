@@ -1,20 +1,167 @@
+<div class="bg">
+  <%= image_tag("1.jpg", :alt => "", width: '100%') %>
+</div>
 
 <section class="index_section">
 
-  <div class="welcome">Welcome To Our Studio!</div>
-  <div class="nicetomeetyou">It's Nice To Meet You</div>
+  <div class="welcome">Привет!</div>
+  <div class="nicetomeetyou">Вечер в хату</div>
 
-  <div class="btn">
-    <%= link_to 'Зарегистрироваться', '/users/new'%>
+
+  <div style="margin-top: 300px;">
+    <div class="inv-btn">
+      <%= link_to 'Войти', '/users/new'%>
+    </div>
+    <div class="btn">
+      <%= link_to 'Зарегистрироваться', '/users/new'%>
+    </div>
   </div>
 
+  <section id="about">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h2 class="section-heading">О нас</h2>
+          <h3 class="section-subheading">Мы самая классная фотостудия на диком западе.</h3>
+        </div>
+      </div>
 
-  <div class="btn">
-    <%= link_to 'Посмотреть залы', '/rooms/show'%>
-  </div>
+      <div >
+        <div class="about-image">
+          <%= image_tag("2.jpg", :alt => "") %>
+        </div>
+        <div class="image-comment" style="margin-left: 40%">
+          <div class="image-comment-title">
+            <h2 class="section-heading">мы короче топовые</h2>
+            <h3 class="section-subheading">на все 100.</h3>
+          </div>
+          <div class="image-comment-text">
+            <p>
+              Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county.
+              The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing.
+              Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting.
+            </p>
+          </div>
+          <div class="btn">
+            <%= link_to 'Расписание записей', '/records/show'%>
+          </div>
+        </div>
+      </div>
 
-  <div class="btn">
-    <%= link_to 'Записаться на съемку', '/records/new'%>
-  </div>
+<!--      <div class="columns">-->
+<!--        <div class="column">-->
+<!--          <ul class="history">-->
+<!--            <li>-->
+<!--              <div class="history-image">-->
+<!--                <img src="img/about/1.jpg" alt="">-->
+<!--              </div>-->
+<!--              <div class="history-panel">-->
+<!--                <div class="history-title">-->
+<!--                  <h4>2009-2011</h4>-->
+<!--                  <h4 class="subheading">о нас немношк</h4>-->
+<!--                </div>-->
+<!--                <div class="history-text">-->
+<!--                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="history-inverted">-->
+<!--              <div class="history-image">-->
+<!--                <img src="img/about/2.jpg" alt="">-->
+<!--              </div>-->
+<!--              <div class="history-panel">-->
+<!--                <div class="history-title">-->
+<!--                  <h4>March 2011</h4>-->
+<!--                  <h4 class="subheading">и еще немношк букв</h4>-->
+<!--                </div>-->
+<!--                <div class="history-text">-->
+<!--                  <p class="text-muted">Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,-->
+<!--                    recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <div class="history-image">-->
+<!--                <img src="img/about/3.jpg" alt="">-->
+<!--              </div>-->
+<!--              <div class="history-panel">-->
+<!--                <div class="history-title">-->
+<!--                  <h4>December 2012</h4>-->
+<!--                  <h4 class="subheading">ну и еще</h4>-->
+<!--                </div>-->
+<!--                <div class="history-text">-->
+<!--                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="history-inverted">-->
+<!--              <div class="history-image">-->
+<!--                <img src="img/about/4.jpg" alt="">-->
+<!--              </div>-->
+<!--              <div class="history-panel">-->
+<!--                <div class="history-title">-->
+<!--                  <h4>July 2014</h4>-->
+<!--                  <h4 class="subheading">больше букв богу букв</h4>-->
+<!--                </div>-->
+<!--                <div class="history-text">-->
+<!--                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum-->
+<!--                    eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et-->
+<!--                    ea quo dolore laudantium consectetur!</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="history-inverted">-->
+<!--              <div class="history-image">-->
+<!--                <h4>Be Part-->
+<!--                  <br>Of Our-->
+<!--                  <br>Story!</h4>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+  </section>
+
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h2 class="section-heading">Портфолио</h2>
+          <h3 class="section-subheading">ля какие.</h3>
+        </div>
+      </div>
+
+      <div >
+        <div class="portfolio-image">
+          <%= image_tag("1.jpg", :alt => "", width: '800') %>
+        </div>
+        <div class="image-comment" style="float: left">
+          <div class="image-comment-title">
+            <h2 class="section-heading">у нас много комнат</h2>
+            <h3 class="section-subheading">они прикольные.</h3>
+          </div>
+          <div class="image-comment-text">
+            <p>
+              Good draw knew bred ham busy his hour.
+              Ask agreed answer rather joy nature admire wisdom.
+              Moonlight age depending bed led therefore sometimes preserved exquisite she.
+            </p>
+          </div>
+          <div class="btn" style="margin-top: 20px;">
+            <%= link_to 'Посмотреть залы', '/rooms/show'%>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<section>
+
+</section>
+
 
 </section>

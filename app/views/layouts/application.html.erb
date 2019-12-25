@@ -5,7 +5,6 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <script src="/app/javascript/packs/timetable.js"></script>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -20,7 +19,7 @@
       <div class="menu">
         <ul class="nav-menu">
           <li class="nav-elem">
-            <a href="#">О нас</a>
+            <a href="#ftr">О нас</a>
           </li>
           <li class="nav-elem">
             <a href="#">Оборудование</a>
@@ -42,7 +41,7 @@
 
     <%= yield %>
 
-  <footer>
+  <footer id="ftr">
 
     <div class="footer-content">
       <div class="footer-columns">
