@@ -12,7 +12,7 @@ body{
 }
 
 nav{
-  z-index:1;
+  z-index:5;
   position: fixed;
   top: 0;
   right: 0;
@@ -170,132 +170,6 @@ section {
   padding-left: 15px;
 }
 
-
-
-
-.history{
-  position: relative;
-  padding: 0;
-  list-style: none;
-}
-
-.history:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 40px;
-  width: 2px;
-  margin-left: -1.5px;
-  content: '';
-  background-color: #e9ecef;
-}
-
-.history>li {
-  min-height: 170px;
-  margin-bottom: 100px;
-  position: relative;
-}
-
-.history>li:after,.history>li:before{
-  display:table;
-  content:' ';
-}
-
-.history>li:after{
-  clear:both
-}
-
-.history>li.history-panel{
-  position: relative;
-  float: right;
-  width: 100%;
-  padding: 0 20px 0 100px;
-  text-align: left;
-}
-
-.history>li.history-panel:before{
-  right:auto;
-  left:-15px;
-  border-right-width:15px;
-  border-left-width:0;
-}
-
-.history>li.history-panel:after{
-  right:auto;
-  left:-14px;
-  border-right-width:14px;
-  border-left-width:0;
-}
-
-
-.history>li.history-image{
-  position: absolute;
-  z-index: 100;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  margin-left: 0;
-  text-align: center;
-  color: #fff;
-  border: 7px solid #e9ecef;
-  border-radius: 100%;
-  background-color: #fed136;
-}
-
-.history>li.history-image h4 {
-  font-size: 10px;
-  line-height: 14px;
-  margin-top: 12px
-}
-
-.history>li.history-inverted>.history-panel {
-  float: right;
-  padding: 0 20px 0 100px;
-  text-align: left;
-}
-
-.history>li.history-inverted>.history-panel:before {
-  right: auto;
-  left: -15px;
-  border-right-width: 15px;
-  border-left-width: 0;
-}
-
-.history>li.history-inverted>.history-panel:after {
-  right: auto;
-  left: -14px;
-  border-right-width: 14px;
-  border-left-width: 0
-}
-.history>li:last-child {
-  margin-bottom: 0;
-}
-
-.history .history-title h4 {
-  margin-top: 0;
-  color: inherit;
-}
-
-.history .history-title h4.subheading {
-  text-transform: none;
-}
-
-.history .history-text>p,.history .history-text>ul {
-  margin-bottom: 0;
-}
-
-.text-muted{
-  margin-bottom: 0;
-  color: #6c757d!important;
-  line-height: 1.75;
-  margin-top: 0;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  text-align: right;
-}
 
 
 
