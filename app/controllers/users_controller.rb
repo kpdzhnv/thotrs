@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     # @user = User.new(params[:user])
 
     session[:user_id] = @user.id
-    # @user.save
+    @user.save
 
     redirect_to '/welcome'
   end
