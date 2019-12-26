@@ -32,7 +32,7 @@ development:
   username: postgres
 
   # The password associated with the postgres role (username).
-  password: 1234
+  password: P@ssw0rd
   # after setting user and password run "rake db:create"
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   username: postgres
-  password: 1234
+  password: P@ssw0rd
   <<: *default
   database: thotrs_test
 
