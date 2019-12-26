@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'layouts/index'
+
   post 'users/create'
+  post 'users/new'
   get 'users/show'
   get 'users/new'
 
   post 'records/create'
+  post 'records/new'
   get 'records/show'
   get 'records/new'
 

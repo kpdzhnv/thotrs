@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -15,20 +15,20 @@
   <nav>
 
     <div class="nav-content">
-      <a class="logo" href="#">Logo</a>
+      <a class="logo" href="/">Logo</a>
       <div class="menu">
         <ul class="nav-menu">
           <li class="nav-elem">
-            <%= link_to 'О нас', 'rooms/show' %>
+            <%= link_to 'О нас', '/layouts/index#about' %>
           </li>
           <li class="nav-elem">
-            <%= link_to 'Оборудование', 'rooms/show' %>
+            <%= link_to 'Оборудование', '/rooms/show' %>
           </li>
           <li class="nav-elem">
-            <%= link_to 'Залы', 'rooms/show' %>
+            <%= link_to 'Залы', '/rooms/show' %>
           </li>
           <li class="nav-elem">
-            <%= link_to 'Контакты ', 'rooms/show' %>
+            <%= link_to 'Контакты ', '/rooms/show' %>
           </li>
         </ul>
       </div>
@@ -49,10 +49,10 @@
           <span class="copyright">Copyright © ъуъ 2019</span>
         </div>
         <div class="footer-column">
-          <ul class="social">
-            <li><a href="#">VK</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="https://vk.com/arenahistory">VK</a></li>
+            <li class="footer-link"><a href="https://www.instagram.com/sincere_artist/">Instagram</a></li>
+            <li class="footer-link"><a href="#">Twitter</a></li>
           </ul>
         </div>
         <div class="footer-column">
