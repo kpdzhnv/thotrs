@@ -308,3 +308,17 @@ footer{
   color:  #fed136;
 }
 
+//timetable fix
+.timetable{
+  background-color: white;
+}
+.timetable section{
+  margin-top: 0px;
+  align-items: flex-start;
+  text-align: start;
+
+}
+.timetable li{
+  color: #000;
+  text-align: start;
+}

@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="http://timetablejs.grible.co/styles/timetablejs.css">
+    <script src="http://timetablejs.grible.co/scripts/timetable.min.js"></script>
   </head>
 
   <body>
@@ -62,6 +64,26 @@
     </div>
 
   </footer>
+  <script>
+      var timetable = new Timetable();
 
+      timetable.setScope(9,2)
+
+      timetable.addLocations(['Зал 1', 'Зал 2', 'Зал 42', 'Зал победы JS над здравым смыслом']);
+
+      timetable.addEvent('Фоточки', 'Зал 1', new Date(2015,7,17,10,45),
+          new Date(2015,7,17,12,30), '#');
+      timetable.addEvent('Опять фоточки', 'Зал 42', new Date(2015,7,17,12),
+          new Date(2015,7,17,13), '#');
+      timetable.addEvent('Длинная съемка с длинным названием чтобы протестить', 'Зал 2',
+          new Date(2015,7,17,13,30), new Date(2015,7,17,15), '#');
+      timetable.addEvent('Отладка и тестирование', 'Зал победы JS над здравым смыслом',
+          new Date(2015,7,17,9,0), new Date(2015,7,24,00), '#');
+
+
+      var renderer = new Timetable.Renderer(timetable);
+      renderer.draw('.timetable');
+  </script>
   </body>
+
 </html>
