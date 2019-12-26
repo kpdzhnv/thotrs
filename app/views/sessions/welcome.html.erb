@@ -1,0 +1,20 @@
+
+<div class="welcome">Привет!</div>
+
+<% if logged_in? %>
+
+  <div class="nicetomeetyou">
+    Вечер в хату,
+    <%= current_user.username %>
+  </div>
+
+<% end %>
+
+<div style="margin-top: 300px;">
+  <div class="inv-btn">
+    <%= link_to "Login", '/login', method: :get %>
+  </div>
+  <div class="btn">
+    <%= link_to "Sign up", '/users/new', method: :get %>
+  </div>
+</div>

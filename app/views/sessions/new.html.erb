@@ -1,0 +1,13 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+<section class="sessions-new">
+
+  <div class="div-form">
+    <%= form_tag '/login' do %>
+      <%= text_field_tag :name%> <!-- , class: 'create-form', placeholder: 'ИМЯ' -->
+      <%= password_field_tag :password %> <!-- , class: 'create-form', placeholder: 'PASSWORD' -->
+      <%= submit_tag :ok, class: 'create-form submit-form' %>
+    <% end %>
+  </div>
+
+</section>
