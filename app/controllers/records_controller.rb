@@ -1,6 +1,7 @@
 class RecordsController < ApplicationController
   def show
     @records = Record.all.order(:time)
+    @rooms = Room.all
     # @users = User.find()
   end
 

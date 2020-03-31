@@ -29,10 +29,10 @@ record1 = Record.create(date: DateTime.now.to_date,
                         duration: 90, room: room1, user: user1, facilities: [facility1])
 record2 = Record.create(date: DateTime.now.to_date,
                         time: DateTime.now.to_time,
-                        duration: 60, room: room1, user: user2, facilities: [facility1, facility2])
+                        duration: 60, room: room2, user: user2, facilities: [facility1, facility2])
 record3 = Record.create(date: DateTime.now.to_date,
                         time: DateTime.now.to_time,
-                        duration: 30, room: room2, user: user1, facilities: [facility1])
+                        duration: 30, room: room3, user: user1, facilities: [facility1])
 record4 = Record.create(date: DateTime.now.to_date,
                         time: DateTime.now.to_time,
-                        duration: 90, room: room2, user: user3, facilities: [facility2])
+                        duration: 90, room: room4, user: user3, facilities: [facility2])
